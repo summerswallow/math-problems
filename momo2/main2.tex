@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage[shortlabels]{enumitem}
+
+\begin{document}
+
+
+
+\section*{Logarithm Identity Practice}
+
+\begin{problem}{1}
+Suppose $\log a=5$, $\log b=\frac{3}{2}$ and $\log c=\frac{3}{4}$. 
+
+\textbf{Example:} $\log bc = \log b + \log c = \frac{3}{2} + \frac{3}{4}= \frac{9}{4}$
+
+Use log identities to calculate:
+
+\begin{enumerate}[(a)] % (a), (b), (c), ...
+\item $\log(ab)$
+\vspace{.3in}
+\item $\displaystyle{\log\left(\frac{b}{c}\right)}$
+\vspace{.3in}
+\item $\log(c^4)$
+\vspace{.3in}
+\item $\log\sqrt{b}$
+\vspace{.3in}
+\item $\displaystyle{\log\left(\frac{a}{c}\right)^6}$
+\vspace{.3in}
+
+\end{enumerate}
+\end{problem}
+\pagebreak
+
+
+\pagebreak\section*{Introduction to L'H\^opital's Rule}
+
+L'Hopital's rule is used to calculate limits.
+
+\vspace{\baselineskip}
+\noindent If $\displaystyle{\lim_{x\to a} f(x)\to\infty}$ and $\displaystyle{\lim_{x\to a} g(x)\to\infty}$ OR $\displaystyle{\lim_{x\to a} f(x)=0}$ and $\displaystyle{\lim_{x\to a} g(x)=0}$   then
+$$\lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)}$$ 
+
+\begin{problem}{1}
+Calculate
+$\displaystyle{\lim_{z\to 0} \frac{\sin(z)}{2z}}$
+\end{problem}
+\vspace{2in}
+\begin{problem}{2}
+Calculate $\displaystyle{\lim_{y\to \infty} \frac{\ln(y)}{3y}}$
+ \end{problem}
+ \begin{problem}{3}
+ Calculate  $\displaystyle{\lim_{x\to 1} \frac{x^3-3x^2+2}{x^3-x^2-x+1}}$
+ \end{problem}
+  
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\begin{problem}4{}
+\begin{enumerate}
+    \item Calculate $\displaystyle{\lim_{x\to 3} \frac{3x^2+1}{x+4}}$
+    \item Calculate  $\displaystyle{\lim_{x\to 3} 6x}$
+
+ \end{enumerate}
+ \end{problem}
+ \pagebreak
+ \section*{More to L'H\^opital's Rule}
+
+
+\begin{problem}{1}
+Evalulate $\displaystyle{\lim_{z\to \infty} \frac{x^2+3x-10}{7x^2-5x+4}}$
+\end{problem}
+\vspace{2in}
+\begin{problem}{2}
+Calculate
+$\displaystyle{\lim_{z\to \infty} \frac{e^{3x}}{5x^3+200}}$
+\end{problem}
+ \end{document}
