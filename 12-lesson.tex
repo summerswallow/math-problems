@@ -1,0 +1,41 @@
+\section*{Derivative Review. Exponentials and Logarithms}
+
+Basic Formulas
+\begin{equation*}
+  \begin{aligned}
+    \frac{d}{dx} e^x &= e^x \\
+    \noalign{Remember $a^x = e^{\ln a x}$}
+    \frac{d}{dx} a^x &= \ln (a) a^x \\
+    \frac{d}{dx} \ln(x) &= \frac{1}{x} \\
+  \end{aligned}
+\end{equation*}
+
+\begin{questions}
+\question
+Calculate the deriviative of $\log_{10} x$ hint use change of base formula.
+\begin{solution}[1.5in]
+  $$\frac{x}{dx} \log_{10}x = \frac{x}{dx} \frac{\ln x}{\ln 10}  = \frac{1}{\ln (10) x}$$
+\end{solution}
+\question
+Calculate the derviative of $\ln (x^2+1)$ hint chain rule
+\begin{solution}[1.5in]
+  Use chain rule
+    $$\frac{x}{dx} \ln(x^2+1) = \frac{1}{x^2+1} \cdot 2x = \frac{2x}{x^2+1}$$
+\end{solution}
+\question
+Calculate the derviative of $10^{2x}$
+\begin{solution}[1.5in]
+  $$\frac{x}{dx} 10^{2x} =  (2\ln 10) 10^{2x}$$
+\end{solution}
+\question
+Calculate the derviative of $e^{x^2+1}$ use chain rule
+\begin{solution}[1.5in]
+  $$\frac{x}{dx} e^{x^2+1} =  2x e^{x^2+1}$$
+\end{solution}
+The functions $\sinh(x) = \frac{e^x-e^-x}{2}$ and $\cosh(x) = \frac{e^x+e^-x}{2}$ you have the usual other functions like $\tanh$ and $\coth$ defined in the obvious ways. (In answering the questions below comment on how they are similar or different than trig functions).
+\begin{parts}
+  \part Calculate the derivative of $\sinh(x)$ and express as a hyperbolic function.
+  \part Calculate the derivative of $\sinh(x)$ and express as a hyperbolic function.
+  \part (bonus 2 boba points) Calculate the derivative of $\tanh(x)$ and express as a hyperbolic function. Hint the ``pythogorean identity'' for hyperbolic functions is $$\sinh^2 - \cosh^2 = 1$$
+\end{parts}
+\end{questions}

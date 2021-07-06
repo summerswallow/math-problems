@@ -1,0 +1,64 @@
+\section*{Derivative Review. Chain Rule}
+
+Basic Formulas
+\begin{equation*}
+  \begin{aligned}
+    \frac{d}{dx} f(g(x)) &= \frac{df}{dx}(g(x)))\frac{d}{dx} g(x) \\
+    \noalign{\vspace{1 em}or if}
+    h(x) &= f(g(x)) \\
+    \noalign{then}
+    h'(x) &= f^\prime(g(x))g'(x) \\
+  \end{aligned}
+\end{equation*}
+
+\begin{questions}
+\question
+Calculate the derivative of $f(x)=\ln (x^3)$ two ways. Use the logarithm property and chain rule
+\begin{solution}[1.5in]
+  Logarithms
+  $$f(x) = 3 \ln(x)$$
+  so
+  $$f^\prime(x)=\frac{3}{x}$$
+  Chain Rule
+  $$f(x)=g(h(x))$$
+  where   $g(x)=\ln(x)$ and $h(x)=x^3$
+  $$g'(x) = \frac{1}{x}$$
+  $$h'(x) = 3x^2$$
+  so
+  $$f'(x)=g'(h(x))h'(x) = \frac{1}{x^3}\cdot 3x^2 = \frac{3x^2}{x^3} = \frac{3}{x}$$
+\end{solution}
+\question
+Calculate the derviative of $e^{x^2}$
+\begin{solution}[1.5in]
+  $$f(x)=e^{x}$$
+  $$g(x)=x^2$$
+  $$f'(x)=e^{x}$$
+  $$g'(x)=2x$$
+  so
+  $$h'(x) = 2xe^{x^2}$$
+\end{solution}
+\question
+Given the table
+  \begin{tabular}{c|cccccc}
+    \hline
+    & $f(x)$ & $f^\prime(x)$ & $g(x)$ & $g'(x)$ \\
+    \hline
+    1& 1 & 3 & 5 & 4 \\
+    \hline
+    3& 9 & 7 & -2 & 3 \\
+    \hline
+    5 &3 & 6 & 7 & 5 \\
+    \hline
+  \end{tabular}
+  \vspace{1em}
+  \begin{parts}
+    \part Calculate $h'(1)$ where $h(x) = f(g(x))$
+    \begin{solution}[.5in]
+      $h'(x)=f'(g(x))g'(x)$ so $h'(1)= f'(5)g'(1)=6\cdot 4=24$
+    \end{solution}
+    \part Calculate $h'(5)$ where $h(x) = g(f(x))$.
+    \begin{solution}[.5in]
+      $h'(x)=g'(f(x))f'(x)$ so $h'(5)= g'(3)f'(5)=3\cdot 6=18$
+    \end{solution}
+  \end{parts}
+\end{questions}

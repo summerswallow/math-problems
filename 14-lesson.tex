@@ -1,0 +1,41 @@
+\section*{Using Logarithms to Calculate Derivatives for Fun}
+
+Differentiation is no different than any other operation you can perform.
+If $y=f(x)$ then $\frac{dy}{dx} = \frac{d}{dx}f(x)$. This is a tool that can be used to calculate complex derivatives.
+
+Example:
+\begin{equation*}
+  \begin{aligned}
+    y &= e^{\sin x} \\
+    \noalign {Use the power property of logarithms}
+    ln y &= \sin x \ln e = \sin x \\
+    \noalign {Take the derivative of both sides. Use the chain rule on the left}
+    \frac{1}{y} \frac{dy}{dx} &= \cos x \\
+    \frac{dy}{dx} &= \cos x y \\
+    \noalign {Substitute the definition of $y$ from the first line}
+    \frac{dy}{dx} &= \cos x e^{\sin x} \\
+  \end{aligned}
+\end{equation*}
+This is the result you would expect using the chain rule
+\begin{questions}
+  \question
+  Calculate the derivative of $e^{e^x}$.
+  \begin{solution}[1.5in]
+  \end{solution}
+  \question (2 boba points)
+  Calculate the derivative of $x^x$.
+  \begin{solution}[1.5in]
+  \end{solution}
+  \question (3 boba points)
+  Calculate the derivative of $x^{x^x}$ this is not $(x^x)^x$ but rather $x^{(x^x)}$ and order does matter.
+  \begin{solution}[1.5in]
+  \end{solution}
+  \question (2 boba points)
+  Calculate the derivative of $log_x x$ Hint use the reverse trick calculate the derivative of $e^y$.
+  \begin{solution}[1.5in]
+  \end{solution}
+  \question (3 boba points)
+  The supersquare root of a number $\sqrt{x}_s$ is defined so that $\sqrt{x}_s^{\sqrt{x}_s} = x$. Calculate the derivative of $\sqrt{x}_s$.
+  \begin{solution}[1.5in]
+  \end{solution}
+\end{questions}

@@ -1,0 +1,55 @@
+\section*{Derivative Review. Quotients}
+
+Basic Formulas
+\begin{equation*}
+  \begin{aligned}
+    \frac{d}{dx} \left(\frac{f(x)}{g(x)}\right) &= \frac{g(x)\frac{d}{dx} f(x)-f(x)\frac{d}{dx} g(x)}{[g(x)]^2} \\
+    \noalign{\vspace{1 em}or if}
+    h(x) &= \frac{f(x)}{g(x)} \\
+    \noalign{then}
+    h'(x) &= \frac{f^\prime(x)g(x)-f(x)g^\prime(x)}{[g(x)]^2} \\
+  \end{aligned}
+\end{equation*}
+
+\begin{questions}
+\question
+Calculate the derivative of $f(x)=\frac{1}{x^2}$ two ways. Use the quotient rule and use power rule
+\begin{solution}[1.5in]
+  Quotient rule:
+  $$f^\prime(x)=\frac{0\cdot x^2-1 \cdot 2x}{[x^2]^2} = \frac{-2x}{x^4} = -2\frac{1}{x^3}$$
+  Power Rule
+  $$f(x)=x^{-2}$$
+  so
+  $$f^\prime(x)=-2x^{-3}=-2\frac{1}{x^3}$$
+\end{solution}
+\question
+Calculate the derviative of $\frac{\sin(x)}{x}$
+\begin{solution}[1.5in]
+  $$\frac{x\cos(x)+\sin(x)}{x^2}$$
+\end{solution}
+\question
+Given the table
+
+  \begin{tabular}{c|cccccc}
+    \hline
+    & $f(x)$ & $f^\prime(x)$ & $g(x)$ & $g'(x)$ & $h(x)$ & $h^\prime(x)$ \\
+    \hline
+    1& 1 & 3 & 9 & 4 & 7 & 17 \\
+    \hline
+    5 &3 & 6 & 7 & 5 & 4 & 1 \\
+    \hline
+    -3 &3 & 5 & 4 & 5 & 7& 7  \\
+    \hline
+  \end{tabular}
+  \vspace{1em}
+  \begin{parts}
+    \part Calculate $k'(1)$ where $k(x) = \frac{f(x)}{g(x)}$.
+    \begin{solution}[.5in]
+      $k'(x)=f'(x)g(x)+f(x)g'(x)$ so $k'(1)= 3\cdot9+1\cdot4=27+4=\fbox{31}$
+    \end{solution}
+    \part Calculate $k'(5)$ and $k'(-3)$ where $k(x) = \frac{h(x)}{f(x)}$.
+    \begin{solution}[.5in]
+      $k'(x)=h'(x)f(x)+h(x)f'(x)$ so $k'(5)= 1\cdot3+4\cdot6=3+24=\fbox{27}$
+    \end{solution}
+  \end{parts}
+\end{questions}
